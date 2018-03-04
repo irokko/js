@@ -16,8 +16,8 @@ sumCart(cart)
 function sumCart(cart) {
     var sum = 0;
     for(var i = 0; i<cart.length; i++) {
-        var foodObj = cart[i][1];
-        sum += foodObj.quantity * foodObj.price;
+        var storeObj = cart[i][1];
+        sum += storeObj.quantity * storeObj.price;
     }
     return sum;
 }
